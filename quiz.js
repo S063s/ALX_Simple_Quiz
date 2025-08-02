@@ -2,7 +2,7 @@ function checkAnswer() {
     const userAnswer = document.querySelector('input[name="quiz"]:checked');
     const correctAnswer = document.getElementById("correct-answer");
 
-    if (!userAnswer || userAnswer.value === correctAnswer.value) {
+    if (userAnswer === correctAnswer) {
         correctAnswer.textContent = "Please select an answer.";
         return;
     }
