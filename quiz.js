@@ -11,7 +11,7 @@ function checkAnswer() {
     if (answer === "4") {
         correctAnswer.textContent = "Correct! Well done.";
     } else {
-        feedback.textContent = "That's incorrect. Try again.";
+        correctAnswer.textContent = "That's incorrect. Try again.";
     }
 }
 
